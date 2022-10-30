@@ -1,4 +1,4 @@
-import { strictEquals } from './js/strictEquals';
+import strictEquals from './js/strictEquals.js';
 
 console.table([
   ['A', 'B', 'RESULT'],
