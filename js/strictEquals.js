@@ -2,7 +2,7 @@ const exceptionNaN = [NaN];
 const exception0 = [0];
 const exceptionNEgative0 = [-0];
 
-export const strictEquals = (a, b) => {
+export default function strictEquals(a, b) {
   if (exceptionNaN.includes(a) && exceptionNaN.includes(b)) {
     return !Object.is(a, b);
   }
@@ -15,5 +15,4 @@ export const strictEquals = (a, b) => {
     return !Object.is(a, b);
   }
   return Object.is(a, b);
-};
-export default strictEquals;
+}
